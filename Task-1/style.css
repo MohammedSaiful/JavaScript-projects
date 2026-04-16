@@ -1,0 +1,26 @@
+.transition {
+    transition: all 0.4s ease;
+}
+
+.active-state {
+    background-color: black ;
+    color: white;
+}
+
+@keyframes fillRed {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+.start-loading {
+    animation-name: fillRed;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
